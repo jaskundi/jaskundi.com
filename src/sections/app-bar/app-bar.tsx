@@ -65,64 +65,66 @@ const AppBar = ({ ...props }: HTMLAttributes<HTMLElement>) => {
   useOnClickOutside(ref, setFalse);
 
   return (
-    <header
-      className={cn(
-        "fixed top-3 left-3 z-50 rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-out-exponential",
-        value ? "w-84" : "w-44"
-      )}
-      ref={ref}
-    >
-      <div
+    <div className="fixed top-3 left-3 sm:left-[calc(50%-324px)] z-50">
+      <header
         className={cn(
-          "flex items-center justify-between",
-          value ? "gap-0" : "gap-16"
+          "rounded-lg bg-gray-400/40 px-4 py-3 backdrop-blur transition-all duration-400 ease-out-exponential",
+          value ? "w-84" : "w-44"
         )}
-        {...props}
+        ref={ref}
       >
-        <Link href="/" aria-label={t("appBar.home")}>
-          <SvgIconM size="medium" />
-        </Link>
-        <Button onClick={value ? setFalse : setTrue}>
-          <Typography variant="body1" color="inherit">
-            {value ? t("appBar.close") : t("appBar.menu")}
-          </Typography>
-        </Button>
-      </div>
+        <div
+          className={cn(
+            "flex items-center justify-between",
+            value ? "gap-0" : "gap-16"
+          )}
+          {...props}
+        >
+          <Link href="/" aria-label={t("appBar.home")}>
+            <SvgIconM size="medium" />
+          </Link>
+          <Button onClick={value ? setFalse : setTrue}>
+            <Typography variant="body1" color="inherit">
+              {value ? t("appBar.close") : t("appBar.menu")}
+            </Typography>
+          </Button>
+        </div>
 
-      <AnimatePresence>
-        {value ? (
-          <motion.div
-            {...appBarAnimation.container}
-            className="overflow-hidden"
-          >
+        <AnimatePresence>
+          {value ? (
             <motion.div
-              {...appBarAnimation.innerContainer}
-              className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3"
+              {...appBarAnimation.container}
+              className="overflow-hidden"
             >
-              {sections.map((section, index) => (
-                <Link
-                  key={section.label}
-                  href={section.href}
-                  onClick={setFalse}
-                >
-                  <motion.div
-                    initial={appBarAnimation.item.initial}
-                    animate={appBarAnimation.item.animate}
-                    transition={appBarAnimation.item.transition(index)}
-                    className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+              <motion.div
+                {...appBarAnimation.innerContainer}
+                className="space-y-3 rounded-sm bg-gray-400/40 px-3 py-3"
+              >
+                {sections.map((section, index) => (
+                  <Link
+                    key={section.label}
+                    href={section.href}
+                    onClick={setFalse}
                   >
-                    {section.icon}
-                    <Typography variant="body1" color="inherit">
-                      {section.label}
-                    </Typography>
-                  </motion.div>
-                </Link>
-              ))}
+                    <motion.div
+                      initial={appBarAnimation.item.initial}
+                      animate={appBarAnimation.item.animate}
+                      transition={appBarAnimation.item.transition(index)}
+                      className="flex cursor-pointer items-center gap-2 rounded-sm px-3 py-1 text-gray-600 transition-colors hover:bg-blue-500 hover:text-white"
+                    >
+                      {section.icon}
+                      <Typography variant="body1" color="inherit">
+                        {section.label}
+                      </Typography>
+                    </motion.div>
+                  </Link>
+                ))}
+              </motion.div>
             </motion.div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
-    </header>
+          ) : null}
+        </AnimatePresence>
+      </header>
+    </div>
   );
 };
 
