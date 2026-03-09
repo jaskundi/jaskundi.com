@@ -20,11 +20,11 @@ const theme = {
     "var(--color-blue-500)",
   ],
   dark: [
-    "var(--color-blue-100)",
-    "var(--color-blue-200)",
-    "var(--color-blue-300)",
-    "var(--color-blue-400)",
-    "var(--color-blue-500)",
+    "var(--color-gray-100)",
+    "var(--color-gray-200)",
+    "var(--color-gray-300)",
+    "var(--color-gray-400)",
+    "var(--color-gray-500)",
   ],
 };
 

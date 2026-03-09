@@ -45,7 +45,7 @@ const Certifications = () => {
           </Typography>
         </div>
 
-        <div className="col-span-1 sm:col-span-9 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="col-span-1 sm:col-span-9 grid grid-cols-2 gap-6">
           {items.map((item) => (
             <CertificationListItem
               key={item.name}
