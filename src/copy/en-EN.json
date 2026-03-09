@@ -28,22 +28,26 @@
     "jobs": {
       "1": {
         "title": "The Sandbox",
-        "role": "Managing Director (Romania)"
+        "role": "Managing Director (Romania)",
+        "location": "Bucharest, Romania"
       },
       "2": {
         "title": "QED (acquired by The Sandbox)",
         "role": "Co-Founder",
-        "duration": "2022 ~ 2025"
+        "duration": "2022 ~ 2025",
+        "location": "London, UK"
       },
       "3": {
         "title": "stake.fish / f2pool.io",
         "role": "Senior Software Engineer",
-        "duration": "2019 ~ 2022"
+        "duration": "2019 ~ 2022",
+        "location": "London, UK"
       },
       "4": {
         "title": "Alacritylaw",
         "role": "Lead Software Engineer",
-        "duration": "2017 ~ 2019"
+        "duration": "2017 ~ 2019",
+        "location": "London, UK"
       }
     }
   },

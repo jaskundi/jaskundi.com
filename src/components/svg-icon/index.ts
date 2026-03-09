@@ -14,5 +14,6 @@ export { default as SvgIconHevy } from "./svg-icon-hevy";
 export { default as SvgIconHouse } from "./svg-icon-house";
 export { default as SvgIconM } from "./svg-icon-m";
 export { default as SvgIconNotepad } from "./svg-icon-notepad";
+export { default as SvgIconPin } from "./svg-icon-pin";
 export { default as SvgIconTrophy } from "./svg-icon-trophy";
 export * from "./types";

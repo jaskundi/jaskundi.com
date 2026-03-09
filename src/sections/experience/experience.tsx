@@ -13,21 +13,25 @@ const Experience = () => {
     {
       title: t("experience.jobs.1.title"),
       role: t("experience.jobs.1.role"),
+      location: t("experience.jobs.1.location"),
     },
     {
       title: t("experience.jobs.2.title"),
       role: t("experience.jobs.2.role"),
       duration: t("experience.jobs.2.duration"),
+      location: t("experience.jobs.2.location"),
     },
     {
       title: t("experience.jobs.3.title"),
       role: t("experience.jobs.3.role"),
       duration: t("experience.jobs.3.duration"),
+      location: t("experience.jobs.3.location"),
     },
     {
       title: t("experience.jobs.4.title"),
       role: t("experience.jobs.4.role"),
       duration: t("experience.jobs.4.duration"),
+      location: t("experience.jobs.4.location"),
     },
   ];
 
@@ -45,6 +49,7 @@ const Experience = () => {
               title={job.title}
               role={job.role}
               duration={job?.duration}
+              location={job?.location}
             />
           ))}
         </div>

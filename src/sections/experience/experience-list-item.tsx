@@ -3,19 +3,21 @@
 import { useTranslations } from "next-intl";
 
 import { Chip } from "@/components/chip";
-import { SvgIconDot } from "@/components/svg-icon";
+import { SvgIconDot, SvgIconPin } from "@/components/svg-icon";
 import { Typography } from "@/components/typography";
 
 export type ExperienceListItemProps = {
   title: string;
   role: string;
   duration?: string;
+  location?: string;
 };
 
 const ExperienceListItem = ({
   title,
   role,
   duration,
+  location,
 }: ExperienceListItemProps) => {
   const t = useTranslations();
 
@@ -39,6 +41,15 @@ const ExperienceListItem = ({
           </div>
         )}
       </div>
+
+      {location && (
+        <div className="flex items-center gap-1">
+          <SvgIconPin size="small" className="text-blue-400" />
+          <Typography variant="body2" color="muted">
+            {location}
+          </Typography>
+        </div>
+      )}
     </div>
   );
 };
