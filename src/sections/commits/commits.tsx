@@ -12,6 +12,13 @@ import { Section } from "@/components/section";
 import { SvgIconBranch } from "@/components/svg-icon";
 
 const theme = {
+  light: [
+    "var(--color-blue-100)",
+    "var(--color-blue-200)",
+    "var(--color-blue-300)",
+    "var(--color-blue-400)",
+    "var(--color-blue-500)",
+  ],
   dark: [
     "var(--color-blue-100)",
     "var(--color-blue-200)",
