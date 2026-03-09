@@ -51,6 +51,36 @@
       }
     }
   },
+  "certifications": {
+    "title": "Certifications",
+    "showCredential": "Show Credential",
+    "items": {
+      "1": {
+        "name": "Certification Name",
+        "issuer": "Issuing Org",
+        "date": "Jan 2024",
+        "url": "https://example.com"
+      },
+      "2": {
+        "name": "Certification Name",
+        "issuer": "Issuing Org",
+        "date": "Nov 2023",
+        "url": "https://example.com"
+      },
+      "3": {
+        "name": "Certification Name",
+        "issuer": "Issuing Org",
+        "date": "Aug 2023",
+        "url": "https://example.com"
+      },
+      "4": {
+        "name": "Certification Name",
+        "issuer": "Issuing Org",
+        "date": "Feb 2023",
+        "url": "https://example.com"
+      }
+    }
+  },
   "commits": {
     "viewOnGitHub": "View on GitHub"
   },

@@ -76,22 +76,30 @@ const getWorkout = (workout?: HevyAPIWorkout) => {
   };
 };
 
-export const getWorkouts = async () => {
-  const [workoutsCountResponse, workoutsResponse] = await Promise.all([
-    instance.get<HevyAPIWorkoutsCountResponse>("/workouts/count"),
-    instance.get<HevyAPIWorkoutsResponse>("/workouts"),
-  ]);
+export const getWorkouts = async (): Promise<Workouts> => {
+  try {
+    const [workoutsCountResponse, workoutsResponse] = await Promise.all([
+      instance.get<HevyAPIWorkoutsCountResponse>("/workouts/count"),
+      instance.get<HevyAPIWorkoutsResponse>("/workouts"),
+    ]);
 
-  const boxing = workoutsResponse.data.workouts.find(
-    (workout) => workout.exercises.length === WORKOUTS_BOXING_EXERCISES
-  );
-  const weights = workoutsResponse.data.workouts.find(
-    (workout) => workout.exercises.length > WORKOUTS_BOXING_EXERCISES
-  );
+    const boxing = workoutsResponse.data.workouts.find(
+      (workout) => workout.exercises.length === WORKOUTS_BOXING_EXERCISES
+    );
+    const weights = workoutsResponse.data.workouts.find(
+      (workout) => workout.exercises.length > WORKOUTS_BOXING_EXERCISES
+    );
 
-  return {
-    boxing: getWorkout(boxing),
-    weights: getWorkout(weights),
-    count: workoutsCountResponse.data.workout_count,
-  };
+    return {
+      boxing: getWorkout(boxing),
+      weights: getWorkout(weights),
+      count: workoutsCountResponse.data.workout_count,
+    };
+  } catch {
+    return {
+      boxing: null,
+      weights: null,
+      count: 0,
+    };
+  }
 };
