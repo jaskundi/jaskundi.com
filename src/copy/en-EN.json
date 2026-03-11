@@ -27,27 +27,27 @@
     "title": "Experience",
     "jobs": {
       "1": {
-        "title": "The Sandbox",
-        "role": "Managing Director (Romania)",
-        "location": "Bucharest, Romania"
+        "title": "Marketing Products Manager",
+        "role": "IHG Hotels & Resorts",
+        "location": "Windsor, UK"
       },
       "2": {
-        "title": "QED (acquired by The Sandbox)",
-        "role": "Co-Founder",
-        "duration": "2022 ~ 2025",
-        "location": "London, UK"
+        "title": "Web Content Manager",
+        "role": "IHG Hotels & Resorts",
+        "duration": "2017 ~ 2023",
+        "location": "Windsor, UK"
       },
       "3": {
-        "title": "stake.fish / f2pool.io",
-        "role": "Senior Software Engineer",
-        "duration": "2019 ~ 2022",
-        "location": "London, UK"
+        "title": "Web Developer",
+        "role": "Trustworth Group",
+        "duration": "2016 ~ 2016",
+        "location": "Iver, UK"
       },
       "4": {
-        "title": "Alacritylaw",
-        "role": "Lead Software Engineer",
-        "duration": "2017 ~ 2019",
-        "location": "London, UK"
+        "title": "Web Production Analyst",
+        "role": "American Airlines",
+        "duration": "2014 ~ 2015",
+        "location": "Harmondsworth, UK"
       }
     }
   },
@@ -56,15 +56,15 @@
     "showCredential": "Show Credential",
     "items": {
       "1": {
-        "name": "Certification Name",
-        "issuer": "Issuing Org",
-        "date": "Jan 2024",
+        "name": "Product Manager (PMC)™",
+        "issuer": "Product School",
+        "date": "Apr 2026",
         "url": "https://example.com"
       },
       "2": {
-        "name": "Certification Name",
-        "issuer": "Issuing Org",
-        "date": "Nov 2023",
+        "name": "AI Product Manager (AIPC)",
+        "issuer": "Product School",
+        "date": "Apr 2026",
         "url": "https://example.com"
       },
       "3": {
