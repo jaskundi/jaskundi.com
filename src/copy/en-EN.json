@@ -27,25 +27,25 @@
     "title": "Experience",
     "jobs": {
       "1": {
-        "title": "Marketing Products Manager",
-        "role": "IHG Hotels & Resorts",
+        "title": "IHG Hotels & Resorts",
+        "role": "Marketing Products Manager",
         "location": "Windsor, UK"
       },
       "2": {
-        "title": "Web Content Manager",
-        "role": "IHG Hotels & Resorts",
+        "title": "IHG Hotels & Resorts",
+        "role": "Web Content Manager",
         "duration": "2017 ~ 2023",
         "location": "Windsor, UK"
       },
       "3": {
-        "title": "Web Developer",
-        "role": "Trustworth Group",
+        "title": "Trustworth Group",
+        "role": "Web Developer",
         "duration": "2016 ~ 2016",
         "location": "Iver, UK"
       },
       "4": {
-        "title": "Web Production Analyst",
-        "role": "American Airlines",
+        "title": "American Airlines",
+        "role": "Web Production Analyst",
         "duration": "2014 ~ 2015",
         "location": "Harmondsworth, UK"
       }
@@ -53,16 +53,16 @@
   },
   "certifications": {
     "title": "Certifications",
-    "showCredential": "Show Credential",
+    "showCredential": "Show credential",
     "items": {
       "1": {
-        "name": "Product Manager (PMC)™",
+        "name": "Product Manager (PMC™)",
         "issuer": "Product School",
         "date": "Apr 2026",
         "url": "https://example.com"
       },
       "2": {
-        "name": "AI Product Manager (AIPC)",
+        "name": "AI Product Manager (AIPM)",
         "issuer": "Product School",
         "date": "Apr 2026",
         "url": "https://example.com"

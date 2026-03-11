@@ -28,7 +28,7 @@ const CertificationListItem = ({
 
       <Typography variant="body2" color="muted">
         {issuer}
-        {date && ` · ${date}`}
+        {date && ` ~ ${date}`}
       </Typography>
 
       {url && (
