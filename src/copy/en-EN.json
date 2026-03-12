@@ -14,7 +14,7 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>founder</serif>.\nI build <serif>digital products</serif> and <serif><companies>companies</companies></serif>.",
+    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>product</serif>.\nI own <serif>digital products</serif> and <serif><highlight>vision</highlight></serif>.",
     "description": {
       "0": "I’ve spent the last decade at the intersection of product, design, and engineering, working across early-stage startups and scaled tech teams.",
       "1": "In 2021, I co-founded <url1><serif>QED</serif></url1> and grew it from zero to acquisition by <url2><serif>Sandbox</serif></url2>.",
@@ -62,7 +62,7 @@
         "url": "https://example.com"
       },
       "2": {
-        "name": "AI Product Manager (AIPM)",
+        "name": "AI Product Manager",
         "issuer": "Product School",
         "date": "Apr 2026",
         "url": "https://example.com"
