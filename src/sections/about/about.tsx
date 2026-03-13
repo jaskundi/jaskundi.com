@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 
 import { titleAnimation } from "@/utils/keyframes";
-import { links } from "@/utils/links";
 
 import { Section } from "@/components/section";
 import { Typography } from "@/components/typography";
@@ -48,7 +47,7 @@ const About = () => {
 
     url1: (chunks: ReactNode) => (
       <Link
-        href={links.qed}
+        href="https://www.ihg.com/hotels/gb/en/reservation"
         className="text-blue-500"
         target="_blank"
         rel="noopener noreferrer"
@@ -58,7 +57,7 @@ const About = () => {
     ),
     url2: (chunks: ReactNode) => (
       <Link
-        href={links.sandbox}
+        href="https://www.aa.com/homePage.do?locale=en_GB"
         className="text-blue-500"
         target="_blank"
         rel="noopener noreferrer"
@@ -67,22 +66,12 @@ const About = () => {
       </Link>
     ),
     url3: (chunks: ReactNode) => (
-      <Link
-        href={links.boxing}
-        className="text-blue-500"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href="/writings/" className="text-blue-500">
         {chunks}
       </Link>
     ),
     url4: (chunks: ReactNode) => (
-      <Link
-        href={links.goodreads}
-        className="text-blue-500"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href="/bookshelf/" className="text-blue-500">
         {chunks}
       </Link>
     ),

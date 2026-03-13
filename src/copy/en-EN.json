@@ -14,12 +14,12 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>product</serif>.\nI own <serif>digital products</serif> and <serif><highlight>vision</highlight></serif>.",
+    "title": "<serif><ui><animation><letterDown>A</letterDown><letterUp>U</letterUp></animation>I</ui> engineer</serif> turned <serif>product</serif>.\nI own <serif>digital products</serif> and <serif><highlight>shape vision</highlight></serif>.",
     "description": {
-      "0": "I’ve spent the last decade at the intersection of product, design, and engineering, working across early-stage startups and scaled tech teams.",
-      "1": "In 2021, I co-founded <url1><serif>QED</serif></url1> and grew it from zero to acquisition by <url2><serif>Sandbox</serif></url2>.",
-      "2": "Outside of work, I box. I’m the president of <url3><serif>Viitorul Boxing Club</serif></url3>, where I train and help others do the same. I also <url4><serif>read</serif></url4> a lot, it keeps me sharp.",
-      "3": "Now, I’m building in AI."
+      "0": "I'm a product manager with a background in UI engineering, focused on delivering digital products that matter. Over the last decade at <url1><serif>IHG Hotels & Resorts</serif></url1> and <url2><serif>American Airlines</serif></url2>, I've moved from crafting interfaces to leading global digital initiatives.",
+      "1": "Today, I focus on product strategy and execution — delivering measurable results and exploring how AI is changing the way products are built and delivered.",
+      "2": "Outside of work, I’m into fitness, <url3><serif>writing</serif></url3> and photography. I <url4><serif>read</serif></url4> widely to keep my perspective sharp.",
+      "3": " — JK"
     }
   },
   "experience": {
@@ -27,25 +27,25 @@
     "title": "Experience",
     "jobs": {
       "1": {
-        "title": "IHG Hotels & Resorts",
-        "role": "Marketing Products Manager",
+        "title": "Marketing Products Manager",
+        "role": "IHG Hotels & Resorts",
         "location": "Windsor, UK"
       },
       "2": {
-        "title": "IHG Hotels & Resorts",
-        "role": "Web Content Manager",
+        "title": "Web Content Manager",
+        "role": "IHG Hotels & Resorts",
         "duration": "2017 ~ 2023",
         "location": "Windsor, UK"
       },
       "3": {
-        "title": "Trustworth Group",
-        "role": "Web Developer",
+        "title": "Web Developer",
+        "role": "Trustworth Group",
         "duration": "2016 ~ 2016",
         "location": "Iver, UK"
       },
       "4": {
-        "title": "American Airlines",
-        "role": "Web Production Analyst",
+        "title": "Web Production Analyst",
+        "role": "American Airlines",
         "duration": "2014 ~ 2015",
         "location": "Harmondsworth, UK"
       }
