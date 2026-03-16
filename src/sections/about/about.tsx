@@ -96,9 +96,6 @@ const About = () => {
           <Typography variant="body1">
             {t.rich("about.description.2", renderers)}
           </Typography>
-          <Typography variant="body1">
-            {t.rich("about.description.3", renderers)}
-          </Typography>
         </div>
       </motion.div>
     </Section>
