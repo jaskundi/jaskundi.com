@@ -110,7 +110,7 @@
     "title": "Bookshelf",
     "books": "Books",
     "onMyBookshelf": "On my <serif>Bookshelf</serif>",
-    "personalCollectionOfBooks": "This is a personal collection of books I physically own. I'm always happy to exchange books or lend them out, feel free to <serif><url>reach out</url></serif>.",
+    "personalCollectionOfBooks": "This is my personal collection of physical books. Over time, I've cultivated it through books I've read and kept, with a focus on philosophy, literary fiction, critical theory, and history. If you need recommendations, feel free to <serif><url>reach out</url></serif>.",
     "booksOnMyShelf": "{count} books",
     "stack": "Stack",
     "shelf": "Shelf"
