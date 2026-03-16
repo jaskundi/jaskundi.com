@@ -7,7 +7,8 @@ import { getPosts } from "@/lib/posts";
 import { POSTS_LIMIT } from "@/utils/const";
 
 import { About } from "@/sections/about";
-import { Certifications } from "@/sections/certifications";
+import { Certifications2 } from "@/sections/certifications";
+import { CertificationsTable } from "@/sections/certifications-table";
 import { Commits } from "@/sections/commits";
 import { Experience } from "@/sections/experience";
 import { Posts } from "@/sections/posts";
@@ -29,7 +30,8 @@ const Home = async () => {
     <>
       <About />
       <Experience />
-      <Certifications />
+      <CertificationsTable />
+      <Certifications2 />
       <Commits />
       <Posts posts={posts} />
       <Stats workouts={workouts} />

@@ -6,7 +6,7 @@ import { Section } from "@/components/section";
 import { Typography } from "@/components/typography";
 import { CertificationListItem } from "@/sections/certifications";
 
-const Certifications = () => {
+const Certifications2 = () => {
   const t = useTranslations();
 
   const items = [
@@ -37,7 +37,7 @@ const Certifications = () => {
   ];
 
   return (
-    <Section id="certifications">
+    <Section id="certifications-2">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-16 sm:gap-6">
         <div className="col-span-1 sm:col-span-3">
           <Typography variant="subtitle1">
@@ -61,4 +61,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default Certifications2;
