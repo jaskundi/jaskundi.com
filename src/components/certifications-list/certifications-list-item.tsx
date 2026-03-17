@@ -9,7 +9,7 @@ import { cn } from "@/utils/helpers";
 
 import type { CertificationCategoryColorMapping } from "./types";
 
-const categoryChipColor: CertificationCategoryColorMapping = {
+const categoryChipColorMapping: CertificationCategoryColorMapping = {
   Core: "success",
   AI: "primary",
   Leadership: "secondary",
@@ -62,7 +62,7 @@ const CertificationsListItem = ({
         <Typography variant="body2" color="muted">
           {issuer}
         </Typography>
-        <Chip color={categoryChipColor[category]}>{category}</Chip>
+        <Chip color={categoryChipColorMapping[category]}>{category}</Chip>
       </div>
     </a>
   );
