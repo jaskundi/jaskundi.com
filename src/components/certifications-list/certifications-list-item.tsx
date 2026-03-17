@@ -12,6 +12,7 @@ import type { CertificationCategoryColorMapping } from "./types";
 const categoryChipColorMapping: CertificationCategoryColorMapping = {
   Core: "success",
   AI: "primary",
+  Agile: "info",
   Leadership: "secondary",
 };
 

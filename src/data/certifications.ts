@@ -1,4 +1,9 @@
-export const CertificationCategories = ["Core", "AI", "Leadership"] as const;
+export const CertificationCategories = [
+  "Core",
+  "AI",
+  "Agile",
+  "Leadership",
+] as const;
 export type CertificationCategory = (typeof CertificationCategories)[number];
 
 export type Certification = {
@@ -18,7 +23,7 @@ export const certifications: Certification[] = [
     url: "#",
   },
   {
-    name: "AI Product Strategy",
+    name: "AI Product Management",
     issuer: "Product School",
     year: 2026,
     category: "AI",
@@ -42,7 +47,7 @@ export const certifications: Certification[] = [
     name: "Scrum Product Owner (CSPO®)",
     issuer: "Scrum Alliance",
     year: 2026,
-    category: "Core",
+    category: "Agile",
     url: "#",
   },
   {
