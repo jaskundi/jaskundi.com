@@ -51,8 +51,10 @@
     }
   },
   "certifications": {
-    "title": "Certifications",
+    "title": "Learning & Development",
     "showCredential": "Show credential",
+    "continuousGrowth": "Continuous <serif>growth</serif>.",
+    "viewAll": "View all certifications",
     "items": {
       "1": {
         "name": "Product Manager (PMC™)",
