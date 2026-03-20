@@ -43,7 +43,9 @@ const FooterListItem = ({
 
     try {
       await setCopiedText(value);
-    } catch {}
+    } catch (error) {
+      console.error("Failed to copy to clipboard:", error);
+    }
   };
 
   return (

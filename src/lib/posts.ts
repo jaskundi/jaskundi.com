@@ -1,8 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-import groupBy from "lodash.groupby";
-import take from "lodash.take";
 import { getYear } from "date-fns/getYear";
 import { compareDesc } from "date-fns/compareDesc";
 
@@ -43,9 +41,13 @@ export const getPosts = (limit?: number) => {
     })
     .sort((post1, post2) => compareDesc(post1.createdAt, post2.createdAt));
 
-  const result = limit ? take(posts, limit) : posts;
+  const result = limit ? posts.slice(0, limit) : posts;
 
-  return groupBy<Post>(result, (post) => getYear(post.createdAt));
+  const grouped = Object.groupBy(result, (post) =>
+    String(getYear(post.createdAt))
+  );
+
+  return { ...grouped } as Record<string, Post[]>;
 };
 
 export const getPostSlugs = () => {
@@ -79,5 +81,7 @@ export const getPost = (slug?: string | string[]) => {
       slug,
       content,
     };
-  } catch {}
+  } catch (error) {
+    console.error(`Failed to load post "${slug}":`, error);
+  }
 };

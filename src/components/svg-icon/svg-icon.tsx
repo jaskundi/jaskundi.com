@@ -24,6 +24,7 @@ const SvgIcon = ({
 }: SvgIconProps) => {
   return (
     <svg
+      aria-hidden="true"
       viewBox={viewBox}
       fill="currentColor"
       className={cn(className, svgIconSizeClassNames[size])}

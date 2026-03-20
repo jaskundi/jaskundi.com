@@ -95,7 +95,8 @@ export const getWorkouts = async (): Promise<Workouts> => {
       weights: getWorkout(weights),
       count: workoutsCountResponse.data.workout_count,
     };
-  } catch {
+  } catch (error) {
+    console.error("Failed to fetch workouts from Hevy API:", error);
     return {
       boxing: null,
       weights: null,
